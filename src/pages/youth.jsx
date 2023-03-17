@@ -43,17 +43,17 @@ const YouthPage = () =>
                     <img className='float-right' src="/images/youth-img-3.jpg" alt="" />
                 </div>
                 <div className='w-full sm:w-1/3 inline-block text-white  float-left h-80 sm:h-72  font-bold'>
-                    <div className=' block text-center ml-10 mt-10 float-left sm:mt-2 sm:ml-5 md:w-80%'>
-                        <h2 className='w-full text-center md:text-2xl md:mt-6'>ENCOUNTER - TIEMPOS DE ENTREGA</h2>
-                        <h2 className=' text-green font-bold text-xs00 mt-5 md:text-3xl'>PROXIMOS SERVICIOS</h2>
-                        <ul className='mt-5 list-disc w-32 text-left ml-auto mr-auto md:text-3xl md:w-56'>
+                    <div className=' w-full block text-center ml-auto mr-auto mt-8 float-left sm:mt-2 sm:ml-5 md:w-80%'>
+                        <h2 className='w-full text-center  md:mt-6 lg:text-sm xl:text-2xl'>ENCOUNTER - TIEMPOS DE ENTREGA</h2>
+                        <h2 className=' text-green font-bold text-xs00 lg:mt-5 xl:text-3xl'>PROXIMOS SERVICIOS</h2>
+                        <ul className='list-disc w-32 text-left ml-auto mr-auto xl:text-2xl md:w-56 xl:mt-5 sm:ml-10 '>
                             <li>Septiembre 16</li>
                             <li>Septiembre 30</li>
                             <li>Octubre 14</li>
                             <li>Octubre 28</li>
                             <li>Noviembre 11</li>
                         </ul>
-                        <button className='bg-sky_blue mt-5 pl-10 pr-10 pt-2 pb-2 sm:p-2 sm:mt-2 md:pl-12 md:pr-12 md:mt-10'>VER LOS SERVICIOS</button>
+                        <button className='bg-sky_blue mt-5 pl-10 pr-10 pt-2 pb-2 sm:mt-1 sm:p-1 md:pl-12 md:pr-12 lg:mt-8  '>VER LOS SERVICIOS</button>
                     </div>
                 </div>
             </div>
