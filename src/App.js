@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import { createBrowserRouter, RouterProvider, } from "react-router-dom";
-import AboutPage from './pages/about';
+
 import HomePage from './pages/home';
 import YouthPage from './pages/youth';
+import AboutUsPage from './pages/aboutUs';
 
 const router = createBrowserRouter([
   {
@@ -12,22 +13,22 @@ const router = createBrowserRouter([
   },
   {
     path: "/Quienes-somos",
-    element: (<AboutPage />),
+    element: (<AboutUsPage />),
   },
   ,
   {
     path: "/Elim-radio",
-    element: (<AboutPage />),
+    element: (<HomePage />),
   },
   ,
   {
     path: "/jorge-Funetes",
-    element: (<AboutPage />),
+    element: (<HomePage />),
   },
   ,
   {
     path: "/Noe-vargas",
-    element: (<AboutPage />),
+    element: (<HomePage />),
   },
   ,
   {
