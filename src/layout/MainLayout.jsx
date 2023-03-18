@@ -9,7 +9,9 @@ const MainLayout = ({ children }) =>
     return (
         <>
             <MenuHeader></MenuHeader>
+
             {children}
+
             <footer className=' sm:pr-12 sm:pl-12'>
                 <BarSocialNetworks />
                 <BarServices />

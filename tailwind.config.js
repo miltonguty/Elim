@@ -24,11 +24,18 @@ module.exports = {
         '2xl': '24px',
         '3xl': '30px',
         '4xl': '37px',
+        '5xl': '45px',
+        '6xl': '56px'
       },
       fontFamily: {
         "Montserrat": "Montserrat"
       },
+      height: {
+        '456px': '456px',
+      },
       width: {
+        '330px': '330px',
+        '645px': '645px',
         '50%': '50%',
         '70%': '70%',
         '80%': '80%',

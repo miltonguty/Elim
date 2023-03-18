@@ -5,7 +5,19 @@ import Caroucel from "../components/Caroucel"
 
 const HomePage = () =>
 {
-    const images = ["/images/img-01.jpg", "/images/img-02.jpg"]
+    const items = [{
+        image: "/images/img-01.jpg",
+        title: "BIENVENIDO A ELIM",
+        subTitle: "ELIM COCHABAMBA BOLIVIA"
+    },
+    {
+        image: "/images/img-02.jpg",
+        title: "",
+        subTitle: ""
+    }
+
+    ]
+
     const settings = {
         dots: false,
         infinite: true,
@@ -17,7 +29,8 @@ const HomePage = () =>
     return (
         <MainLayout >
 
-            <Caroucel images={images} settings={settings} />
+            <Caroucel items={items} settings={settings} />
+
         </MainLayout>
     )
 }

@@ -5,6 +5,9 @@ import { createBrowserRouter, RouterProvider, } from "react-router-dom";
 import HomePage from './pages/home';
 import YouthPage from './pages/youth';
 import AboutUsPage from './pages/aboutUs';
+import Connect_1Page from './pages/connect_1';
+import Connect_2Page from './pages/connect_2 ';
+import RadioPage from './pages/radio';
 
 const router = createBrowserRouter([
   {
@@ -18,17 +21,17 @@ const router = createBrowserRouter([
   ,
   {
     path: "/Elim-radio",
-    element: (<HomePage />),
+    element: (<RadioPage />),
   },
   ,
   {
     path: "/jorge-Funetes",
-    element: (<HomePage />),
+    element: (<Connect_1Page />),
   },
   ,
   {
     path: "/Noe-vargas",
-    element: (<HomePage />),
+    element: (<Connect_2Page />),
   },
   ,
   {

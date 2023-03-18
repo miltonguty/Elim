@@ -3,9 +3,9 @@ const BarSocialNetworks = () =>
 {
     return (
         <div className=" bg-white h-20 flex items-center justify-center">
-            <img src="/images/youtube.png"></img>
-            <img src="/images/facebook.png"></img>
-            <img src="/images/instagram.png"></img>
+            <a href=""><img src="/images/youtube.png"></img></a>
+            <a href="https://www.facebook.com/iglesia.elim.528316"> <img src="/images/facebook.png"></img></a>
+            <a href=""> <img src="/images/instagram.png"></img></a >
         </div>
     )
 }

@@ -5,7 +5,17 @@ import MainLayout from "../layout/MainLayout"
 
 const YouthPage = () =>
 {
-    const images = ["/images/youth-img-01.jpg", "/images/youth-img-02.jpg"]
+    const items = [
+        {
+            image: "/images/youth-img-01.jpg",
+            title: "",
+            subTitle: ""
+        },
+        {
+            image: "/images/youth-img-02.jpg",
+            title: "",
+            subTitle: ""
+        }]
     const settings = {
         dots: false,
         infinite: true,
@@ -15,7 +25,7 @@ const YouthPage = () =>
 
     };
     return <MainLayout>
-        <Caroucel images={images} settings={settings} height="397px" />
+        <Caroucel items={items} settings={settings} height="397px" />
         <div>
             <div className='w-1/2 m-auto'>
                 <div className='font-Montserrat m-auto'>
@@ -28,13 +38,13 @@ const YouthPage = () =>
                 <div>
                     <div className=' flex justify-center items-center'>
                         <img src="/images/p.png" alt="" />
-                        <img src="/images/v.png" alt="" />
-                        <img src="/images/c.png" alt="" />
+                        <img src="/images/v.png" alt="" className='-ml-8' />
+                        <img src="/images/c.png" alt="" className='-ml-8' />
                     </div>
-                    <div className='w-full m-auto  sm:w-90% lg:w-70%' >
-                        <p className='w-full sm:w-1/3 inline-block float-left mb-5 sm:pl-5'>P Dios ha despertado los corazones de nuestra juventud con PASION Y PALABRA por su PRESENCIA. Nuestra vision esque la PRESENCIA de Dios sea siempre nuestro nucleo y su PALABRA sea nuestro manual de vida. Ahnelamos que en nuestro ADN este impregnado el ADN divino de Dios. </p>
-                        <p className='w-full sm:w-1/3 inline-block float-left mb-5 sm:pl-5'>V  VALORAR la presencia de Dios es primordial en Elim Youth. Creemos firmemente que Dios ahnela jovenes que vivan en intimidad con El y que aprecien cada momento en su presencia y cada regalo que Dios nos de ha desarrollar . VALORAR es aprender a vivir en santidad dia tras dia y defender lo que Dios nos ha dado. </p>
-                        <p className='w-full sm:w-1/3 inline-block float-left mb-5 sm:pl-5'>C El CRECER espiritualmente y terrenalmente es necesario para nuestros jovenes. Nos rehusamos a ser una juventud mediocre sin el ahnelo de CRECER.  Es muy importante para nosotros el alcanzar nuevas dimensiones y  subir de nivel en cada Servico, cada evento y en cada dia porque en ello hay una oportunidad de Dios a nuestras vidas. </p>
+                    <div className='w-full m-auto  sm:w-90% lg:w-70% font-bold' >
+                        <p className='w-full sm:w-1/3 inline-block float-left mb-5 sm:pl-5'> <span className='text-sky_blue uppercase'>P</span> Dios ha despertado los corazones de nuestra juventud con <span className='text-sky_blue uppercase'>PASION</span> Y <span className='text-sky_blue uppercase'>PALABRA</span> por su <span className='text-sky_blue uppercase'>PRESENCIA</span>. Nuestra vision esque la <span className='text-sky_blue uppercase'>PRESENCIA</span> de Dios sea siempre nuestro nucleo y su <span className='text-sky_blue uppercase'>PALABRA</span> sea nuestro manual de vida. Ahnelamos que en nuestro ADN este impregnado el ADN divino de Dios. </p>
+                        <p className='w-full sm:w-1/3 inline-block float-left mb-5 sm:pl-5'><span className='text-orange-400 uppercase'>V</span>  <span className='text-orange-400 uppercase'>VALORAR</span> la presencia de Dios es primordial en Elim Youth. Creemos firmemente que Dios ahnela jovenes que vivan en intimidad con El y que aprecien cada momento en su presencia y cada regalo que Dios nos de ha desarrollar . <span className='text-orange-400 uppercase'>VALORAR</span> es aprender a vivir en santidad dia tras dia y defender lo que Dios nos ha dado. </p>
+                        <p className='w-full sm:w-1/3 inline-block float-left mb-5 sm:pl-5'><span className='text-green uppercase'>C</span> <span className='text-green uppercase'>El CRECER</span> espiritualmente y terrenalmente es necesario para nuestros jovenes. Nos rehusamos a ser una juventud mediocre sin el ahnelo de <span className='text-green uppercase'>CRECER.</span>  Es muy importante para nosotros el alcanzar nuevas dimensiones y  subir de nivel en cada Servico, cada evento y en cada dia porque en ello hay una oportunidad de Dios a nuestras vidas. </p>
                     </div>
                 </div>
             </div>
