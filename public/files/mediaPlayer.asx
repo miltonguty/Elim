@@ -1,0 +1,6 @@
+<ASX version = "3.0">
+ <Entry>
+ <Ref href = "http://telered.live:8000//stream" />
+ <Ref href = "http://telered.live:8000//stream" />
+ </Entry>
+</ASX>
