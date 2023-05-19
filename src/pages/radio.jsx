@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import MainLayout from "../layout/MainLayout"
 
-const RadioPage = () =>
-{
+const RadioPage = () => {
     const LINK_RADIO = "https://freeuk28.listen2myradio.com/live.mp3?typeportmount=s1_14618_stream_162015420"
     const [programations, setProgramation] = useState([]);
-    const getApiData = async () =>
-    {
+    const getApiData = async () => {
         /*let response = await fetch(
             "'http://services.ELIM.com.bo/api/radio/programacion"
         ).then((response) => response.json());*/
@@ -30,8 +28,7 @@ const RadioPage = () =>
         ]
         setProgramation(response);
     };
-    useEffect(() =>
-    {
+    useEffect(() => {
         getApiData()
     }, [])
 
@@ -48,13 +45,7 @@ const RadioPage = () =>
                 <div className='flex  justify-center items-center flex-row-reverse '>
                     <div className='inline-block float-left w-1/2'  >
 
-
-
-                        <audio controls>
-                            <source src={LINK_RADIO} type="audio/mpeg" />
-                            <source src={LINK_RADIO} type="audio/mp3" />
-                            Your browser does not support the audio element.
-                        </audio>
+                        <iframe src="http://104.197.91.106/public/station2/embed?theme=dark" ></iframe>
 
 
 
@@ -63,9 +54,8 @@ const RadioPage = () =>
                         <h1 className='text-green text-center'>PROGRAMACION EN VIVO</h1>
                         <ul className=' block list-disc font-bold pl-5 m-auto w-48'>
                             {
-                                programations.map((item, index) =>
-                                {
-                                    return (<li key={index}> {item.description} </li>)
+                                programations.map((item, index) => {
+                                    return (<li key={ index }> { item.description } </li>)
                                 })
                             }
 
